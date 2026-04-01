@@ -5,7 +5,12 @@ conn = None
 try:
     #Connection to database
 
-    conn = psycopg2.connect(database="flis",user="postgres",password="xhdjxx9jq2051",host="127.0.0.1",port="5432")
+    conn = psycopg2.connect(database="flis",
+                            user="postgres",
+                            password="xhdjxx9jq2051",
+                            host="127.0.0.1",
+                            port="5432")
+    
     print("Database Connected")
     print(conn)
 
